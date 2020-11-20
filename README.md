@@ -1,7 +1,7 @@
 <<<<<<< HEAD
-varshil
+Mariya
 =======
-first commit by varshil
+first commit by Mariya
 
 >>>>>>> 7e1cf97a71fde2fb5aaf522f2b4bd7bee63ad47f
 **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
