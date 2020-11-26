@@ -1,0 +1,35 @@
+Group: <new_group 5>
+
+Question
+========
+
+RQ: Is there a correlation between Ladder score and Logged GDP per capita?
+
+
+Null hypothesis: There is no correlation between Ladder score and Logged GDP per capita
+
+Alternative hypothesis: There is a correlation between Ladder score and Logged GDP per capita.
+
+Dataset
+=======
+
+URL: https://www.kaggle.com/mathurinache/world-happiness-report?select=2020.csv
+
+Column Headings: 
+<run colnames() on your dataset in R, and copy the output here>
+```
+> View(X2020)
+> colnames(X2020)
+ [1] "Country name"                              
+ [2] "Regional indicator"                        
+ [3] "Ladder score"                              
+ [4] "Standard error of ladder score"            
+ [5] "upperwhisker"                              
+ [6] "lowerwhisker"                              
+ [7] "Logged GDP per capita"                     
+ [8] "Social support"                            
+ [9] "Healthy life expectancy"                   
+[10] "Freedom to make life choices"              
+[11] "Generosity"                                
+[12] "Perceptions of corruption"                 
+[13] "Ladder score in Dystopia"   
