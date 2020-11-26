@@ -1,5 +1,8 @@
-
-first commit by Mariya
+First commit by Mariya
+First commit by Varshil
+First commit by Himanshu
+First commit by Harsha
+First commit by Ridhit
 
 **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
