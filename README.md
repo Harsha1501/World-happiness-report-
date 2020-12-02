@@ -1,9 +1,9 @@
-<<<<<<< HEAD
-varshil
-=======
-first commit by varshil
+First commit by Mariya
+First commit by Varshil
+First commit by Himanshu
+First commit by Harsha
+First commit by Ridhit
 
->>>>>>> 7e1cf97a71fde2fb5aaf522f2b4bd7bee63ad47f
 **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
 When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
