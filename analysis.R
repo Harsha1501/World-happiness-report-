@@ -37,3 +37,21 @@ whr_dataset$region <- factor(whr_dataset$region,
 ggplot(whr_dataset, aes(x=region, 
                         y=GDP, fill=region)) + geom_bar(stat="identity") + labs(title = "Mean of Ladder_score of Regions Vs GDP for year 2020", subtitle = "") + theme(legend.position = "none") + theme(axis.text.x = element_text(angle = 90, hjust=1))
 #boxplot(whr$Ladder_score~Country.name,data = whr$GDP, xlab= "Ladder score",ylab ="GDP", main= "Ladder score(dependent) per Logged GDP per capita(Independent)",col = "orange",border = "brown",horizontal = TRUE,notch = TRUE,varwidth=TRUE)
+
+
+
+
+
+
+#to plot the histogram of our dataset, which shows the correlation between ladder score and logged GDP
+
+X2020 <- read.csv("World Happiness Report 2020.csv")
+vrb <- lm(X2020$Logged.GDP.per.capita ~ X2020$Ladder.score, data= X2020)
+plot(X2020$Ladder.score , X2020$Logged.GDP.per.capita ,
+     ylab = "GDP" , 
+     xlab = "Ladder score" , 
+     main = "histogram of happiness data of 2020" , 
+     type = "h" ,
+     col = c("green")) 
+curve(dnorm(x, mean=mean(X2020$Ladder.score), sd=sd(X2020$Ladder.score)), add=TRUE, col="red")
+
