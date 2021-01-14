@@ -2,7 +2,7 @@
 #Scatter Plot
 
 pdf("visualization.pdf")
-df <- read.csv("World Happiness Report 2020.csv")
+df <- read.csv("World_Happiness_Report_2020.csv")
 Logged_GDP_per_capita<-df$Logged.GDP.per.capita
 Ladder_score<- df$Ladder.score
 vrb <- lm(df$Logged.GDP.per.capita ~ df$Ladder.score, data= df)
@@ -16,7 +16,7 @@ library(ggplot2)
 library(dplyr)
 
 # Step1: importing the csv file world happiness report 2020 into variable whr
-whr<- read.csv("World Happiness report 2020.csv")
+whr<- read.csv("World_Happiness_Report_2020.csv")
 #View(whr)
 # Step2: Simplifying the name of the columns into whr 
 names(whr)[1]<-"country"
@@ -51,3 +51,4 @@ whr_dataset$region <- factor(whr_dataset$region,
 ggplot(whr_dataset, aes(ladder_score,y=GDP, fill=region)) + geom_bar(stat="identity") + labs(title = "Mean of Ladder_score of Regions Vs GDP for year 2020", subtitle = "") + theme(legend.position = "none") + theme(axis.text.x = element_text(angle = 90, hjust=1))
 
 dev.off()
+
